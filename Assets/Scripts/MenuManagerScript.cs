@@ -27,6 +27,7 @@ public class MenuManagerScript : MonoBehaviour
         }
     }
 
+    // If game is currently paused, this methode will resume the game, if not the game will be paused
     void PauseGame()
     {
         if (!gameIsPaused)
@@ -41,6 +42,7 @@ public class MenuManagerScript : MonoBehaviour
         }
     }
 
+    // Resuming the game
     void ResumeGame()
     {
         Time.timeScale = 1;
@@ -48,6 +50,7 @@ public class MenuManagerScript : MonoBehaviour
         gameIsPaused = false;
     }
 
+    // Restart the game
     void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
