@@ -4,18 +4,32 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private float turnspeed = 100.0f;
-    private float movespeed = 3.0f;
+    public float turnspeed;
+    public float movespeed;
+
+    // private Rigidbody rb;
+
+    // void Start()
+    // {
+    //     rb = GetComponent<Rigidbody>();
+    // }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        // If using rigidbody enable this comment
+        // float moveVertical = Input.GetAxis("Vertical");
+        // float moveHorizontal = Input.GetAxis("Horizontal");
         // Get the horizontal and vertical axis
         float moveVertical = Input.GetAxis("Vertical") * movespeed;
         float moveHorizontal = Input.GetAxis("Horizontal") * movespeed;
 
         if (!MenuManagerScript.gameIsPaused)
         {
+            // If using rigidbody enable this comment
+            // Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
+            // rb.AddForce(movement * movespeed);
+
             // Move translation along the object's z-axis
             transform.Translate(0.0f, 0.0f, moveVertical * Time.deltaTime);
 
