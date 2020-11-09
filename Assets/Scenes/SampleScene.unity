@@ -185,7 +185,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eaeba38bc98c04ca9b6336bd31b233f4, type: 2}
+  - {fileID: 2100000, guid: 98c59631974da4075b39a5521e0be32f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1192,8 +1192,8 @@ GameObject:
   - component: {fileID: 1633904053}
   - component: {fileID: 1633904052}
   - component: {fileID: 1633904051}
-  - component: {fileID: 1633904050}
   - component: {fileID: 1633904049}
+  - component: {fileID: 1633904050}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1213,8 +1213,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 284c8594d5619489b839d9c89659f48e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &1633904050
-BoxCollider:
+--- !u!135 &1633904050
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1224,7 +1224,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1633904051
 MeshRenderer:
@@ -1244,7 +1244,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eaeba38bc98c04ca9b6336bd31b233f4, type: 2}
+  - {fileID: 2100000, guid: 98c59631974da4075b39a5521e0be32f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1388,6 +1388,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 455028471}
     m_Modifications:
+    - target: {fileID: 2288059184998120191, guid: 83f488ed83df648b2966a3ac7e9b746d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: eaeba38bc98c04ca9b6336bd31b233f4, type: 2}
     - target: {fileID: 2406870744527765342, guid: 83f488ed83df648b2966a3ac7e9b746d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1448,6 +1453,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Object
       objectReference: {fileID: 0}
+    - target: {fileID: 4123742503082119171, guid: 83f488ed83df648b2966a3ac7e9b746d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: eaeba38bc98c04ca9b6336bd31b233f4, type: 2}
     - target: {fileID: 7768601474775423059, guid: 83f488ed83df648b2966a3ac7e9b746d,
         type: 3}
       propertyPath: m_RootOrder
