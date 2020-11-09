@@ -1,3 +1,3 @@
-# abgabe-01
+# Entwicklung Multimedia Abgabe
 
-Das ist die erste Abgabe der Übung EMM
+Hier finden Sie die Abgaben der Übung EMM
